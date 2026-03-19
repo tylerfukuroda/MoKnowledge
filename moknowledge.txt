@@ -1,0 +1,11 @@
+1) The scraper was built using three layers: the crawler, extractor, and transformer. The crawler visits every page on the site using a queue and a set of URLs that have already been visited to avoid duplicate information and infinite loops. The extractor takes the raw page data and pulls data such as emails, phone numbers, social media links, color codes, and general page text. Lastly, the transformer takes the organized data from extractor and converts it into the knowledge base structure using pattern matching and regex to make guesses about things such as company name, industry, founding story, key people, and calls to action.
+
+2)  Writing style detection - detects whether a brand is casual or corperate which affects how AI should write their knowledge base.
+      Testimonials - Helps the knowledge base look better.
+      Price Information - Helpful information about a company’s services.
+
+3) Brand colors, writing style, and social media information help MoSocial determine the tone to use and what platforms to target. Customer needs and calls to action help MoMail deliver targeted emails. Themes, offerings, and industry type helps MoBlogs find topics to write about.
+
+4) I would integrate a real LLM to replace regex guessing and to find information the scraper may have missed. I would also implement a real database rather than a downloadable JSON file to store the knowledge bases. Lastly, I would add concurrency to the crawler to help improve scraping speed.
+
+5) The most challenging part of this assignment was learning Typescript and Next.js on the fly. I am new to the language and the framework. In order to learn Typescript and Next.js, I used videos, documentation, and generative AI. It was also challenging to figure out how to build the company knowledge base without using LLMs, which led me to learning more about regex.
